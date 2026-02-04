@@ -19,8 +19,9 @@ for _ in range(N):
 
 print("Outcomes:", outcomes) """
 
+""" 
 # Part B
-""" N=1000
+N=1000
 
 # Random variable values
 X=[]
@@ -33,15 +34,17 @@ for _ in range(N):
     else:
         X.append(0)
 
-print("RV:", X)
+print("RV:", X)  """
 
-# Plot histogram of the RV
+
+""" # Plot histogram of the RV
 plt.hist(X, bins=[-0.5, 0.5, 1.5], rwidth=0.8, align='mid', color='skyblue', edgecolor='black')
 plt.xticks([0,1])
 plt.xlabel("Value of the RV X") 
 plt.ylabel("Frequency")
 plt.title("Histogram of Random Variable X (Coin Toss)")
-plt.show() """
+plt.show() 
+ """
 
 # Part C
 """ N=1500
@@ -77,23 +80,26 @@ for _ in range(N):
 
 print("RV:", X)  """
 
+
+
 # Part E
 # RV as a dictionary
 """ omega = ["H", "T"]
 X={"H":1, "T":0}
 
 for outcome in omega:
-    print(outcome, "->", X[outcome]) """
+    print(outcome, "->", X[outcome])
+ """
 
 # Part F
 # RV die roll with square function
-""" def X(omega):
+def X(omega):
     return omega**2
 
 omega = [1,2,3,4,5,6]
 
 for outcome in omega:
-    print(outcome, "->", X(outcome))  """
+    print(outcome, "->", X(outcome)) 
 
 # Part G   
 # RV as number of heads in 2 tosses
@@ -107,7 +113,7 @@ for outcome in omega:
 
 # Part H 
 # RV induced by simulation
-import random
+""" import random
 def X(outcome):
     return 1 if outcome == "H" else 0
 
@@ -115,4 +121,4 @@ def X(outcome):
 outcome = random.choice(["H","T"])
 value = X(outcome)
 print("Outcome:", outcome)
-print("X(outcome):", value)
+print("X(outcome):", value) """
